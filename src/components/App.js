@@ -1,11 +1,12 @@
 import React from 'react';
 
-import './App.css';
+import './../App.css';
+import './Header';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-     
+     <Header />
     </div>
   );
 }
