@@ -1,7 +1,8 @@
 import React from 'react';
+import Home from './Home';
 
 import './../App.css';
-import './Header';
+import Header from './Header';
 
 const App = () => {
   return (
