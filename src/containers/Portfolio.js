@@ -1,11 +1,10 @@
 import React from 'react';
 import Project from '../components/Project';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
-import { faVideo } from '@fortawesome/free-solid-svg-icons';
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faVideo, faLink } from '@fortawesome/free-solid-svg-icons';
 import CoursesTrack from '../img/courses-track.jpg';
 import FamilyMovies from '../img/family-movies.png';
 import NewsWeek from '../img/news-week.png';
+import SpaceShooterGame from '../img/space-shooter-game.gif';
 
 const Portfolio = () => {
     const objects = [
@@ -73,6 +72,25 @@ const Portfolio = () => {
             image: {
                 src: NewsWeek,
                 imageTitle: 'News Week'
+            }
+        },
+        {
+            title: 'Space Shooter Game',
+            details: `This project is about the implementation of a space mission 
+            where the player's goal is to prevent meteors to reach the earth`,
+            tech: ['JavaScript (ES6)','Webpack','NodeJS','Phaser 3'],
+            demo: [{
+                    link: 'https://github.com/Theophile-Kango/space-shooter-game',
+                    icon: faCode,
+                },
+                {
+                    link: 'https://space-game-mission.netlify.app/',
+                    icon: faLink,
+                }
+            ],
+            image: {
+                src: SpaceShooterGame,
+                imageTitle: 'Space Shooter Game'
             }
         }
     ]
