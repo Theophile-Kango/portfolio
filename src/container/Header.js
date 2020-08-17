@@ -1,6 +1,5 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Home from './Home';
 
 const Header = () => {
     return (
@@ -12,25 +11,22 @@ const Header = () => {
                         <AnchorLink href='#home'>Home</AnchorLink>
                     </li>
                     <li>
-                        Portfolio
+                        <AnchorLink href='#portfolio'>Portfolio</AnchorLink>
                     </li>
                     <li>
-                        <a>About</a>
+                        <AnchorLink href='#about'>About</AnchorLink>
                     </li>
                     <li>
-                        <a>Articles</a>
+                        <AnchorLink href='#articles'>Articles</AnchorLink>
                     </li>
                     <li>
-                        <a>Contact</a>
+                        <AnchorLink href='#contact'>Contact</AnchorLink>
                     </li>
                     <li>
-                        <a>Resume</a>
+                        <AnchorLink href='#resume'>Resume</AnchorLink>
                     </li>
                 </ul>
             </nav>
-            <div id="home">
-                <Home />
-            </div>
         </div>
     )
 }
