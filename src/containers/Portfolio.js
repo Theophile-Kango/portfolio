@@ -5,6 +5,7 @@ import { faVideo } from '@fortawesome/free-solid-svg-icons';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import CoursesTrack from '../img/courses-track.jpg';
 import FamilyMovies from '../img/family-movies.png';
+import NewsWeek from '../img/news-week.png';
 
 const Portfolio = () => {
     const objects = [
@@ -36,7 +37,7 @@ const Portfolio = () => {
             details: `Family Movies Catalogue is a catalogue of some movies with the family theme, 
             that is, a browsable and the list of items can be 
             filtered by the production year and accessed to the details of each item`,
-            tech: ['React/Redux','NodeJS','ES6','SCSS'],
+            tech: ['React','Redux','NodeJS','ES6','SCSS'],
             demo: [{
                     link: 'https://github.com/Theophile-Kango/family-movies-catalogue',
                     icon: faCode,
@@ -53,6 +54,25 @@ const Portfolio = () => {
             image: {
                 src: FamilyMovies,
                 imageTitle: 'Family Movies'
+            }
+        },
+        {
+            title: 'News Week',
+            details: `Building a web page that is similar to the newsweek web page 
+                with responsive web design`,
+            tech: ['HTML5','CSS3','Bootstrap 4'],
+            demo: [{
+                    link: 'https://github.com/Theophile-Kango/newsweek',
+                    icon: faCode,
+                },
+                {
+                    link: 'https://theophile-kango.github.io/newsweek/',
+                    icon: faLink,
+                }
+            ],
+            image: {
+                src: NewsWeek,
+                imageTitle: 'News Week'
             }
         }
     ]
