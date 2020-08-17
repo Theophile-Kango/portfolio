@@ -2,10 +2,6 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Home from './Home';
 
-// import { 
-//     HashLink as Link
-// } from 'react-router-hash-link';
-
 const Header = () => {
     return (
         <div>
