@@ -10,6 +10,7 @@ const Project =  ( {object} ) => {
         <article>
             <h3>{title}</h3>
             <p>{details}</p>
+            <h4>Built with: </h4>
             {tech.map(elt => (
                 <button key={elt}>{elt}</button>
             ))}
