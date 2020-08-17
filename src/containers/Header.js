@@ -1,10 +1,15 @@
 import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     return (
         <div>
-            <h1>Theophile Kango</h1>
+            <div>
+                <FontAwesomeIcon icon={faLaptopCode} />
+                <h1>Theophile Kango</h1>
+            </div>
             <nav>
                 <ul>
                     <li>

@@ -2,9 +2,9 @@ import React from 'react';
 
 const Articles = () => {
     return (
-        <div>
+        <section id="home">
             <h1>Articles</h1>
-        </div>
+        </section>
     )
 }
 
