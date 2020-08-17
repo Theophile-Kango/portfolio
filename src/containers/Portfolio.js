@@ -5,6 +5,7 @@ import CoursesTrack from '../img/courses-track.jpg';
 import FamilyMovies from '../img/family-movies.png';
 import NewsWeek from '../img/news-week.png';
 import SpaceShooterGame from '../img/space-shooter-game.gif';
+import TelegramBot from '../img/telegram-bot.jpg';
 
 const Portfolio = () => {
     const objects = [
@@ -92,8 +93,32 @@ const Portfolio = () => {
                 src: SpaceShooterGame,
                 imageTitle: 'Space Shooter Game'
             }
-        }
+        },
+        {
+            title: 'Family Movies',
+            details: `This project is about a telegram bot that can help you with corona-virus info
+            with each given Country`,
+            tech: ['Ruby'],
+            demo: [{
+                    link: 'https://github.com/Theophile-Kango/ruby_capston_project',
+                    icon: faCode,
+                },
+                {
+                    link: 'https://youtu.be/q4V9cXcDkII',
+                    icon: faVideo,
+                },
+                {
+                    link: 'https://t.me/covidis_info_bot',
+                    icon: faLink,
+                }
+            ],
+            image: {
+                src: TelegramBot,
+                imageTitle: 'Telegram Bot'
+            }
+        },
     ]
+    
     return (
         <section id="portfolio">
             <h1>Full Stack Development Portfolio</h1>
