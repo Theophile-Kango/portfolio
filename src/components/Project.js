@@ -1,23 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Project = ({ title, details, tech, demo, image }) => {
-    const {src, title} = image;
+const Project =  ( {object} ) => {
+    const { title, details, tech, demo, image } = object;
+    const { src, imageTitle} = image;
+ 
     return (
         <article>
             <h3>{title}</h3>
             <p>{details}</p>
+            {tech.map(elt => (
+                <button key={elt}>{elt}</button>
+            ))}
             {
-                tech.map(elt => (
-                    <button key={elt}>{elt}</button>
-                ))     
-            }
-            {
-                demo.map(elt => (
-                    <p key={elt}>{elt}</p>
+                demo.map( elt => (
+                    <a 
+                        target="_blank" 
+                        href={elt.link}
+                        key={elt.link}
+                        rel="noopener noreferrer"
+                    >
+                        <FontAwesomeIcon icon={elt.icon} />
+                    </a>
                 ))
             }
-            <img src={src} alt={title} />
+            <img src={src} alt={imageTitle} />
         </article>
     )
 };
