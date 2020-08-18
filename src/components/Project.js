@@ -1,13 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({
+    offset: 400, 
+    delay: 0, 
+    duration: 1000
+});
 
 const Project =  ( {object} ) => {
     const { title, details, tech, demo, image } = object;
     const { src, imageTitle} = image;
  
     return (
-        <article>
+        <article data-aos="fade-left">
             <h3>{title}</h3>
             <p>{details}</p>
             <h4>Built with: </h4>
