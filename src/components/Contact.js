@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import contacts from '../constant/contacts'
+import contacts from '../constant/contacts';
+import styles from './styles/contactStyles.module.scss';
 
 const Contact = () => {
     
     return (
-        <section id="contact">
-            <h1>Contact</h1>
+        <section id="contact" className={styles.contact} >
             <ul>
                 {
                     contacts.map((contact, i ) => ( 
@@ -22,6 +22,7 @@ const Contact = () => {
                     ))
                 }   
             </ul>
+            <p>By Theophile Kango &copy; 2020</p>
         </section>
     )
 }
