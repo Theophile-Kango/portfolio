@@ -1,0 +1,12 @@
+.articles{
+    padding: 100px;
+    a{
+        display: block;
+        line-height: 40px;
+        color: lightcyan;
+        text-decoration: none;
+        &:hover{
+            color: #4386bf;
+        }
+    }
+}

@@ -92,7 +92,7 @@ const objects = [
         }
     },
     {
-        title: 'Family Movies',
+        title: 'Telegram Bot',
         details: `This project is about a telegram bot that can help you with corona-virus info
         with each given Country`,
         tech: ['Ruby'],
