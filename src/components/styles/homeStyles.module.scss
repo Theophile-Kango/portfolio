@@ -25,6 +25,7 @@ $black:  #282c34;
         li{
             display: flex;
             background: lightgray;
+            width: 120px;
             padding: 10px;
             margin-left: 5px;
             list-style: none;
@@ -51,6 +52,26 @@ $black:  #282c34;
             li{
                 margin-bottom: 5px;
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home{
+        ul{
+            padding: 5px 5%;
+            
+        }
+        h1{
+            font-size: 1.2em;
+            margin-top: 80px;
+            padding: 10px 5%;
+        }
+    
+        h3, p{
+            font-size: 1em;
+            line-height: 30px;
+            padding: 10px 5%;
         }
     }
 }

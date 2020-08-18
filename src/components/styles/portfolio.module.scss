@@ -1,4 +1,11 @@
 .portfolio{
     padding: 100px; 
     padding-top: 0;
+    line-height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio{
+        padding: 5%;
+    }
 }
