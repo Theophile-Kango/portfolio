@@ -3,6 +3,7 @@
 .App {
   font-family: 'Lato', sans-serif;
   font-size: 1.2em;
+  width: 100%;
   background-color: #282c34;
   color: lightcyan;
   overflow-x: hidden;

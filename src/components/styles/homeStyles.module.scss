@@ -7,20 +7,49 @@ $black:  #282c34;
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
-    padding: 200px;
-    padding-left: 100px;
+    box-sizing: border-box;
     color: $cyan;
-    h3{
+    h1{
+        margin-top: 150px;
+    }
+
+    h1,h3, p{
         line-height: 40px;
-        a{
+        padding: 30px 20%;
+    }
+    ul{
+        display: flex;
+        margin-top: 0;
+        padding: 0 20%;
+        
+        li{
+            display: flex;
             background: lightgray;
-            color: $black;
-            padding: 3px 10px;
-            text-decoration: none;
-            margin-left: 10px;
+            padding: 10px;
+            margin-left: 5px;
+            list-style: none;
             &:hover{
                 background: $cyan;
-                color: $blue;
+            }
+            a{
+                color: $black;
+                text-decoration: none;
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 830px) {
+    .home{
+        ul{
+            display: flex;
+            flex-direction: column;
+            li{
+                margin-bottom: 5px;
             }
         }
     }
