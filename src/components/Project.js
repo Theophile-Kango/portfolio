@@ -19,10 +19,12 @@ const Project =  ( {object} ) => {
         <article className={styles.project} data-aos="fade-left">
             <h3>{title}</h3>
             <p>{details}</p>
-            <h4>Built with: </h4>
-            {tech.map(elt => (
-                <button key={elt}>{elt}</button>
-            ))}
+            <img src={src} alt={imageTitle} />
+            <h4>Built with: 
+                {tech.map(elt => (
+                    <span key={elt}>{elt}</span>
+                ))}
+            </h4>
             {
                 demo.map( elt => (
                     <a 
@@ -35,7 +37,6 @@ const Project =  ( {object} ) => {
                     </a>
                 ))
             }
-            <img src={src} alt={imageTitle} />
         </article>
     )
 };
