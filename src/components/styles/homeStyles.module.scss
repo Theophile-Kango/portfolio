@@ -1,4 +1,26 @@
-.section{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+$cyan: lightcyan;
+$blue: #4386bf;
+$black:  #282c34;
+
+.home{
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
+    padding: 200px;
+    color: $cyan;
+    h3{
+        line-height: 40px;
+        a{
+            background: lightgray;
+            color: $black;
+            padding: 3px 10px;
+            text-decoration: none;
+            margin-left: 10px;
+            &:hover{
+                background: $cyan;
+                color: $blue;
+            }
+        }
+    }
 }

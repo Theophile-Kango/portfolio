@@ -1,8 +1,11 @@
 $blue: #4386bf;
 $back: #282c34;
+$cyan: lightcyan;
 
 .header{
     background: $blue;
+    position: fixed;
+    top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -31,10 +34,14 @@ $back: #282c34;
                 list-style: none;
                 a{
                     background: $back;
-                    color: white;
+                    color: $cyan;
                     padding: 10px;
                     text-decoration: none;
                     border-radius: 10px;
+                &:hover{
+                    background: $cyan;
+                    color: $blue;
+                }
                 }
             }
         }
