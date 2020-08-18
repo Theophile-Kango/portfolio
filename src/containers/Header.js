@@ -3,10 +3,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import Resume from '../img/Theophile-Kango-Resume.pdf';
+import styles from '../components/styles/headerStyles.module.scss';
 
 const Header = () => {
     return (
-        <div>
+        <header className={styles.header}>
             <div>
                 <FontAwesomeIcon icon={faLaptopCode} />
                 <h1>Theophile Kango</h1>
@@ -30,7 +31,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-        </div>
+        </header>
     )
 }
 

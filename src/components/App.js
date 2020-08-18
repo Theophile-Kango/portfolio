@@ -9,9 +9,7 @@ import Portfolio from '../containers/Portfolio';
 const App = () => {
   return (
     <main className="App">
-      <header>
-        <Header />
-      </header>
+      <Header />
       <div>
         <Home />
         <Portfolio />

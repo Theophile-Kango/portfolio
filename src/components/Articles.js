@@ -2,7 +2,7 @@ import React from 'react';
 
 const Articles = () => {
     return (
-        <section id="home">
+        <section id="articles">
             <h1>Articles</h1>
             <p>
                 <a 

@@ -1,0 +1,42 @@
+$blue: #4386bf;
+$back: #282c34;
+
+.header{
+    background: $blue;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    div{
+        display: flex;
+        h1{
+            font-size: 1.5em;
+        }
+        svg{
+            font-size: 1.5em;
+            margin: 20px;
+        }
+    }
+    nav{
+        width: 500px;
+        margin-right: 10px;
+        justify-content: flex-end;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            
+            li{
+                list-style: none;
+                a{
+                    background: $back;
+                    color: white;
+                    padding: 10px;
+                    text-decoration: none;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
