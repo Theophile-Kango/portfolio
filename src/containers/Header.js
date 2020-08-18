@@ -2,6 +2,7 @@ import React from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import Resume from '../img/Theophile-Kango-Resume.pdf';
 
 const Header = () => {
     return (
@@ -19,16 +20,13 @@ const Header = () => {
                         <AnchorLink href='#portfolio'>Portfolio</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink href='#about'>About</AnchorLink>
-                    </li>
-                    <li>
                         <AnchorLink href='#articles'>Articles</AnchorLink>
                     </li>
                     <li>
                         <AnchorLink href='#contact'>Contact</AnchorLink>
                     </li>
                     <li>
-                        <AnchorLink href='#resume'>Resume</AnchorLink>
+                        <a href={Resume} target="_blank" rel="noopener noreferrer" >Resume</a>
                     </li>
                 </ul>
             </nav>
