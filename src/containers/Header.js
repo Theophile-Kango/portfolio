@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode,faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Resume from '../img/Theophile-Kango-Resume.pdf';
 import styles from '../components/styles/headerStyles.module.scss';
 
 const Header = () => {
+    
+    const [clicked, setClicked] = useState(false);
+
     return (
         <header className={styles.header}>
             <div>
@@ -13,7 +16,11 @@ const Header = () => {
                 <h1>Theophile Kango</h1>
             </div>
             <nav>
-                <ul>
+                <p className={styles.dNone} onClick={() => setClicked(!clicked)}>
+                    {clicked ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faTimes} />}    
+                </p>
+                
+                <ul className={clicked ? styles.ulDNone : ''}>
                     <li>
                         <AnchorLink href='#home'>Home</AnchorLink>
                     </li>

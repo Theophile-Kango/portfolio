@@ -32,16 +32,64 @@ $cyan: lightcyan;
             
             li{
                 list-style: none;
-                a{
-                    background: $back;
-                    color: $cyan;
-                    padding: 10px;
-                    text-decoration: none;
-                    border-radius: 10px;
-                &:hover{
-                    background: $cyan;
-                    color: $blue;
+                    a{
+                        background: $back;
+                        color: $cyan;
+                        padding: 10px;
+                        text-decoration: none;
+                        border-radius: 10px;
+                    &:hover{
+                        background: $cyan;
+                        color: $blue;
+                    }
                 }
+            }
+        }
+
+        .dNone{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .header {
+        position: relative;
+        nav{
+            width: 150px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 150px;
+                li{
+                    width: 80px;
+                    a{
+                        background: $cyan;
+                        color: $blue;
+                        display: block;
+                        width: 100%;
+                        border-radius: 0;
+                        &:hover{
+                            background: $blue;
+                            color: $cyan;
+                        }
+                    }
+                }
+            }
+            .ulDNone{
+                display: none;
+            }
+            .dNone{
+                display: flex;
+                margin-right: 10px;
+                justify-content: flex-end;
+                svg{
+                    font-size: 2em;
+                    &:hover{
+                        cursor: pointer;
+                        color: #282c34;
+                    }
                 }
             }
         }
