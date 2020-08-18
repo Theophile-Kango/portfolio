@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import styles from './styles/projectStyles.module.scss';
 
 AOS.init({
     offset: 400, 
@@ -15,7 +16,7 @@ const Project =  ( {object} ) => {
     const { src, imageTitle} = image;
  
     return (
-        <article data-aos="fade-left">
+        <article className={styles.project} data-aos="fade-left">
             <h3>{title}</h3>
             <p>{details}</p>
             <h4>Built with: </h4>
