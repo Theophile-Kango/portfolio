@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Project from '../components/Project';
 import objects from '../constant/objects';
-import styles from '../components/styles/portfolio.module.scss';
+import styles from '../components/styles/portfolioStyles.module.scss';
 
 AOS.init({
   offset: 400,

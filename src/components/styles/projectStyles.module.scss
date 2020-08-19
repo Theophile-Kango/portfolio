@@ -1,44 +1,52 @@
 $black:  #282c34;
 $cyan: lightcyan;
 
-.project{
-    border-bottom: 1px solid $cyan;
-    img{
-        width: 100%;
+.project {
+  border-bottom: 1px solid $cyan;
+
+  img {
+    width: 100%;
+  }
+
+  p,
+  h3,
+  h4 {
+    line-height: 40px;
+  }
+
+  h4 {
+    span {
+      display: inline-block;
+      background: lightgray;
+      color: $black;
+      padding: 3px 5px;
+      text-decoration: none;
+      margin-left: 10px;
+      margin-bottom: 10px;
     }
-    p, h3, h4{
-        line-height: 40px;
+  }
+
+  a {
+    color: $cyan;
+    text-decoration: none;
+
+    svg {
+      font-size: 1.5em;
+      margin: 20px;
+
+      &:hover {
+        color: #4386bf;
+      }
     }
-    h4{
-        span{
-            display: inline-block;
-            background: lightgray;
-            color: $black;
-            padding: 3px 5px;
-            text-decoration: none;
-            margin-left: 10px; 
-            margin-bottom: 10px;
-        }
-    }
-    a{
-        color: $cyan;
-        text-decoration: none;
-        svg{
-            font-size: 1.5em;
-            margin: 20px;
-            &:hover{
-                color: #4386bf;
-            }
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .project{
-        h3{
-            font-size: 1em;
-            line-height: 30px;
-            padding: 10px 5%;
-        }
+  .project {
+    h3 {
+      font-size: 1em;
+      line-height: 30px;
+      padding: 10px 5%;
     }
+  }
 }

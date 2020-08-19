@@ -1,18 +1,20 @@
-.articles{
-    padding: 100px;
-    a{
-        display: block;
-        line-height: 40px;
-        color: lightcyan;
-        text-decoration: none;
-        &:hover{
-            color: #4386bf;
-        }
+.articles {
+  padding: 100px;
+
+  a {
+    display: block;
+    line-height: 40px;
+    color: lightcyan;
+    text-decoration: none;
+
+    &:hover {
+      color: #4386bf;
     }
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .articles{
-        padding: 10px 5%;
-    }
+  .articles {
+    padding: 10px 5%;
+  }
 }
