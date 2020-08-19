@@ -17,10 +17,10 @@ const Header = () => {
             </div>
             <nav>
                 <p className={styles.dNone} onClick={() => setClicked(!clicked)}>
-                    {clicked ? <FontAwesomeIcon icon={faBars} /> : <FontAwesomeIcon icon={faTimes} />}    
+                    {clicked ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}    
                 </p>
                 
-                <ul className={clicked ? styles.ulDNone : ''}>
+                <ul className={clicked ? null : styles.ulDNone}>
                     <li>
                         <AnchorLink href='#home'>Home</AnchorLink>
                     </li>
