@@ -13,11 +13,7 @@ AOS.init({
 
 const Portfolio = () => (
   <section id="portfolio" data-aos="fade-right" className={styles.portfolio}>
-    <h1>Full Stack Development Portfolio</h1>
-    <h3>
-      Succeed online with a website that is fast, easy to use,
-      and built with best practices and a passion for design.
-    </h3>
+    <h1>Projects worked</h1>
     {
                 objects.map(object => (
                   <Project key={object.title} object={object} />
