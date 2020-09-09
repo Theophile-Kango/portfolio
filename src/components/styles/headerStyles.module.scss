@@ -1,6 +1,6 @@
 $blue: #4386bf;
 $back: #282c34;
-$cyan: lightcyan;
+$cyan: white;
 
 .header {
   background: $blue;
@@ -12,7 +12,7 @@ $cyan: lightcyan;
 
   div {
     display: flex;
-
+    color: white;
     h1 {
       font-size: 1.5em;
     }

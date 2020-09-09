@@ -1,11 +1,11 @@
 .contact {
-  background: lightcyan;
+  background: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0;
-  color: #282c34;
+  color: #ccc;
 
   ul {
     display: flex;
@@ -24,7 +24,7 @@
           margin-left: 20px;
 
           &:hover {
-            color: #282c34;
+            color: #ccc;
           }
         }
       }
