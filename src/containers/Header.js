@@ -25,7 +25,7 @@ const Header = () => {
             <AnchorLink href="#home">Home</AnchorLink>
           </li>
           <li>
-            <AnchorLink href="#portfolio">Portfolio</AnchorLink>
+            <AnchorLink href="#portfolio">Projects</AnchorLink>
           </li>
           <li>
             <AnchorLink href="#articles">Articles</AnchorLink>

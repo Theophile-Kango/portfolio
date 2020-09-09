@@ -1,30 +1,17 @@
 import React from 'react';
-import skills from '../constant/skills';
 import styles from './styles/homeStyles.module.scss';
 
 const Home = () => (
   <section id="home" className={styles.home}>
-    <h1>Successful Full Stack Web Development</h1>
+    <h1>Hi, I&apos;m Theophile</h1>
     <h3>
-      Hi. I’m Theophile, a Full Stack Web Developer
-      with 1-year experience creating successful web applications with
+      Full-Stack Remote Developer
     </h3>
-    <ul>
-      {
-                    skills.map(skill => (
-                      <li key={skill.tech}>
-                        <a
-                          href={skill.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {skill.tech}
-                        </a>
-                      </li>
-                    ))
-                }
-    </ul>
-    <p>Looking for new opportunities</p>
+    <p>
+      Certified web developer who specializes in working with
+      Ruby, Rails, React, Javascript and Redux.
+      Currently exploring front-end remote development opportunities
+    </p>
   </section>
 );
 
