@@ -2,7 +2,7 @@ import { faCode, faVideo, faLink } from '@fortawesome/free-solid-svg-icons';
 import CoursesTrack from '../img/courses-track.jpg';
 import FamilyMovies from '../img/family-movies.png';
 import NewsWeek from '../img/news-week.png';
-import SpaceShooterGame from '../img/space-shooter-game.gif';
+import SpaceShooterGame from '../img/space-shooter-game.jpg';
 import TelegramBot from '../img/telegram-bot.jpg';
 
 const objects = [
