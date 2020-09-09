@@ -31,9 +31,8 @@ const objects = [
   },
   {
     title: 'Family Movies',
-    details: `Family Movies Catalogue is a catalogue of some movies with the family theme, 
-        that is, a browsable and the list of items can be 
-        filtered by the production year and accessed to the details of each item`,
+    details: `A responsive catalogue of family-friendly movies that allows 
+      users to filter and pull up movie details using the IMDB API`,
     tech: ['React', 'Redux', 'NodeJS', 'ES6', 'SCSS'],
     demo: [{
       link: 'https://github.com/Theophile-Kango/family-movies-catalogue',
