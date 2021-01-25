@@ -1,9 +1,8 @@
-$blue: #4386bf;
+$blue: #191765;
 $back: #282c34;
-$cyan: white;
+$cyan: #dfe1e6;
 
 .header {
-  background: $blue;
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,7 +11,6 @@ $cyan: white;
 
   div {
     display: flex;
-    color: white;
 
     h1 {
       font-size: 1.5em;
@@ -40,7 +38,6 @@ $cyan: white;
         list-style: none;
 
         a {
-          background: $back;
           color: $cyan;
           padding: 10px;
           text-decoration: none;
@@ -62,7 +59,6 @@ $cyan: white;
 
 @media only screen and (max-width: 830px) {
   .header {
-
     div {
       display: flex;
       align-items: center;
