@@ -2,8 +2,8 @@ import { faCode, faVideo, faLink } from "@fortawesome/free-solid-svg-icons";
 import CoursesTrack from "../img/courses-track.png";
 import FamilyMovies from "../img/family-movies.png";
 import NewsWeek from "../img/news-week.png";
-import SpaceShooterGame from "../img/space-shooter-game.jpg";
-import TelegramBot from "../img/telegram-bot.jpg";
+import SpaceShooterGame from "../img/space-shooter-game.png";
+import TelegramBot from "../img/telegram-bot.png";
 
 const objects = [
   {
