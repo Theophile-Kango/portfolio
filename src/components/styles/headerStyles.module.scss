@@ -3,6 +3,8 @@ $back: #282c34;
 $cyan: #dfe1e6;
 
 .header {
+  background-color: $cyan;
+  color: #191765;
   position: fixed;
   top: 0;
   width: 100%;
@@ -14,6 +16,7 @@ $cyan: #dfe1e6;
 
     h1 {
       font-size: 1.5em;
+      font-weight: bold;
     }
 
     svg {
@@ -38,14 +41,15 @@ $cyan: #dfe1e6;
         list-style: none;
 
         a {
-          color: $cyan;
+          color: $blue;
           padding: 10px;
           text-decoration: none;
           border-radius: 10px;
+          font-weight: bold;
 
           &:hover {
-            background: $cyan;
-            color: $blue;
+            background: $blue;
+            color: $cyan;
           }
         }
       }

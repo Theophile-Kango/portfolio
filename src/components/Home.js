@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./styles/homeStyles.module.scss";
+import Contact from "./Contact";
 
 const Home = () => (
   <section id="home" className={styles.home}>
+    <div></div>
     <h1>Hi, I&apos;m Theophile</h1>
     <h3>Full-Stack Software Developer</h3>
     <p>
@@ -10,6 +12,8 @@ const Home = () => (
       React, Javascript and Redux. Currently exploring front-end remote
       development opportunities
     </p>
+    <div></div>
+    <Contact />
   </section>
 );
 

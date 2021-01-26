@@ -6,7 +6,7 @@ $black: #282c34;
 .home {
   font-family: "Montserrat", sans-serif;
   height: 100vh;
-  margin-top: 12.5%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,11 @@ $black: #282c34;
   p {
     width: 500px;
     line-height: 40px;
+  }
+
+  p {
+    padding-bottom: 60px;
+    border-bottom: 1px solid lightgray;
   }
 
   ul {
@@ -49,6 +54,23 @@ $black: #282c34;
         }
       }
     }
+  }
+
+  div {
+    background: #edecff;
+    width: 100px;
+    height: 100px;
+    filter: blur(40px);
+  }
+  div:nth-of-type(1) {
+    position: absolute;
+    left: 10%;
+    top: 250px;
+  }
+  div:nth-of-type(2) {
+    position: absolute;
+    right: 10%;
+    top: 450px;
   }
 }
 
