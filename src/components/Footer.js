@@ -4,7 +4,7 @@ import styles from "./styles/footerStyles.module.scss";
 
 const Footer = () => {
   return (
-    <section className={styles.footer}>
+    <section className={styles.footer} id="contact">
       <Contact />
       <p>By Theophile Kango &copy; {new Date().getFullYear()}</p>
     </section>

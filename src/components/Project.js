@@ -16,7 +16,7 @@ const Project = ({ object }) => {
   const { src, imageTitle } = image;
 
   return (
-    <article className={styles.project} data-aos="fade-left">
+    <article className={styles.project}>
       <div>
         <img src={src} alt={imageTitle} />
       </div>

@@ -6,6 +6,32 @@
     font-size: 3rem;
     color: #9390ff;
   }
+  div:nth-child(even) {
+    article {
+      div:nth-of-type(1) {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+      div:nth-last-of-type(1) {
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    }
+  }
+  div:nth-child(odd) {
+    article {
+      display: flex;
+      div:nth-of-type(1) {
+        order: 2;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+      div:nth-last-of-type(1) {
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 600px) {

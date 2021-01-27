@@ -1,10 +1,14 @@
 /* eslint-disable */
-import React, { useState } from 'react';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import Resume from '../img/Theophile-Kango-Resume.pdf';
-import styles from '../components/styles/headerStyles.module.scss';
+import React, { useState } from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLaptopCode,
+  faBars,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
+import Resume from "../img/Theophile-Kango-Resume.pdf";
+import styles from "../components/styles/headerStyles.module.scss";
 
 const Header = () => {
   const [clicked, setClicked] = useState(false);
@@ -17,7 +21,11 @@ const Header = () => {
       </div>
       <nav>
         <p className={styles.dNone} onClick={() => setClicked(!clicked)}>
-          {clicked ? <FontAwesomeIcon icon={faTimes} /> : <FontAwesomeIcon icon={faBars} />}
+          {clicked ? (
+            <FontAwesomeIcon icon={faTimes} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
         </p>
 
         <ul className={clicked ? null : styles.ulDNone}>
@@ -34,7 +42,9 @@ const Header = () => {
             <AnchorLink href="#contact">Contact</AnchorLink>
           </li>
           <li>
-            <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href={Resume} target="_blank" rel="noopener noreferrer">
+              Resume
+            </a>
           </li>
         </ul>
       </nav>

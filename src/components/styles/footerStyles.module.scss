@@ -1,4 +1,5 @@
 .footer {
+  background-color: #2b296d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,16 +15,15 @@
 
     li {
       list-style: none;
+      background-color: #2b296d !important;
 
       a {
-        color: #4386bf;
-
         svg {
           font-size: 1.5em;
           margin-left: 20px;
 
           &:hover {
-            color: #ccc;
+            color: #9390ff;
           }
         }
       }

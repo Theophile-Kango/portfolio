@@ -3,7 +3,7 @@ import styles from "./styles/homeStyles.module.scss";
 import Contact from "./Contact";
 
 const Home = () => (
-  <section id="home" className={styles.home}>
+  <section className={styles.home} id="home">
     <div></div>
     <h1>Hi, I&apos;m Theophile</h1>
     <h3>Full-Stack Software Developer</h3>
