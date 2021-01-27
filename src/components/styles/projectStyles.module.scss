@@ -1,11 +1,29 @@
-$black:  #282c34;
-$cyan: white;
+$black: #282c34;
+$cyan: #dfe1e6;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 
 .project {
-  border-bottom: 1px solid $cyan;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 
-  img {
-    width: 100%;
+  div:nth-of-type(1) {
+    background-color: #2b296d;
+    width: 53.5%;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  div:nth-of-type(2) {
+    background-color: #2b296d;
+    width: 30%;
+    padding: 8%;
   }
 
   p,
@@ -17,12 +35,14 @@ $cyan: white;
   h4 {
     span {
       display: inline-block;
-      background: white;
-      color: $black;
-      padding: 3px 5px;
+      border-right: 1px solid $cyan;
+      color: $cyan;
+      padding: 3px 10px;
       text-decoration: none;
-      margin-left: 10px;
-      margin-bottom: 10px;
+    }
+
+    span:nth-last-child(1) {
+      border-right: none;
     }
   }
 
@@ -37,6 +57,19 @@ $cyan: white;
       &:hover {
         color: #4386bf;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .project {
+    div {
+      width: 90% !important;
+      font-size: 0.8em;
+    }
+
+    div:nth-of-type(1) {
+      width: 106% !important;
     }
   }
 }

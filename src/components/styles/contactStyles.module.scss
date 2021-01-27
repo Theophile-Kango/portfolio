@@ -1,37 +1,32 @@
 .contact {
-  background: black;
+  width: 300px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  color: #ccc;
 
-  ul {
-    display: flex;
-    justify-content: center;
-    padding-right: 60px;
-    margin-bottom: 10px;
+  li {
+    list-style: none;
+    background-color: #191765 !important;
 
-    li {
-      list-style: none;
+    a {
+      svg {
+        font-size: 1.5em;
+        color: #dfe1e6;
 
-      a {
-        color: #4386bf;
-
-        svg {
-          font-size: 1.5em;
-          margin-left: 20px;
-
-          &:hover {
-            color: #ccc;
-          }
+        &:hover {
+          color: #9390ff;
         }
       }
     }
   }
+}
 
-  p {
-    margin-top: 10px;
+@media only screen and (max-width: 830px) {
+  .contact {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+
+    li {
+      width: 10% !important;
+    }
   }
 }

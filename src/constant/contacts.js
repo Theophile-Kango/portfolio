@@ -3,7 +3,6 @@ import {
   faTwitter,
   faLinkedin,
   faGithub,
-  faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 
 const contacts = [
@@ -18,10 +17,6 @@ const contacts = [
   {
     link: 'https://github.com/Theophile-Kango',
     icon: faGithub,
-  },
-  {
-    link: 'https://www.facebook.com/fadhili.kango',
-    icon: faFacebook,
   },
   {
     link: 'mailto:fadhili.kango@gmail.com',

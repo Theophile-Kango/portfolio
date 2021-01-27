@@ -1,9 +1,10 @@
-$blue: #4386bf;
+$blue: #191765;
 $back: #282c34;
-$cyan: white;
+$cyan: #dfe1e6;
 
 .header {
-  background: $blue;
+  background-color: $cyan;
+  color: #191765;
   position: fixed;
   top: 0;
   width: 100%;
@@ -12,10 +13,10 @@ $cyan: white;
 
   div {
     display: flex;
-    color: white;
 
     h1 {
       font-size: 1.5em;
+      font-weight: bold;
     }
 
     svg {
@@ -40,15 +41,15 @@ $cyan: white;
         list-style: none;
 
         a {
-          background: $back;
-          color: $cyan;
+          color: $blue;
           padding: 10px;
           text-decoration: none;
           border-radius: 10px;
+          font-weight: bold;
 
           &:hover {
-            background: $cyan;
-            color: $blue;
+            background: $blue;
+            color: $cyan;
           }
         }
       }
@@ -62,8 +63,6 @@ $cyan: white;
 
 @media only screen and (max-width: 830px) {
   .header {
-    position: relative;
-
     div {
       display: flex;
       align-items: center;

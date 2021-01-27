@@ -13,12 +13,15 @@ AOS.init({
 
 const Portfolio = () => (
   <section id="portfolio" data-aos="fade-right" className={styles.portfolio}>
-    <h1>Projects worked</h1>
-    {
-                objects.map(object => (
-                  <Project key={object.title} object={object} />
-                ))
-            }
+    <h1>My recent work</h1>
+    {objects.map((object, i) => (
+      <div
+        key={object.title}
+        data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+      >
+        <Project object={object} />
+      </div>
+    ))}
   </section>
 );
 

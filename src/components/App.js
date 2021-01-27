@@ -3,7 +3,7 @@ import '../App.css';
 import Header from '../containers/Header';
 import Home from './Home';
 import Articles from './Articles';
-import Contact from './Contact';
+import Footer from './Footer';
 import Portfolio from '../containers/Portfolio';
 
 const App = () => (
@@ -13,7 +13,7 @@ const App = () => (
       <Home />
       <Portfolio />
       <Articles />
-      <Contact />
+      <Footer />
     </div>
   </main>
 );
