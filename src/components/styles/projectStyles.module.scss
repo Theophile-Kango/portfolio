@@ -1,11 +1,24 @@
 $black: #282c34;
-$cyan: white;
+$cyan: #dfe1e6;
 
 .project {
-  border-bottom: 1px solid $cyan;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 
-  img {
-    width: 50%;
+  div:nth-of-type(1) {
+    background-color: $cyan;
+    width: 55%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  div:nth-of-type(2) {
+    width: 45%;
+    padding: 5%;
+    border: 1px solid $cyan;
   }
 
   p,
@@ -15,14 +28,15 @@ $cyan: white;
   }
 
   h4 {
+    span:nth-last-child(1) {
+      border-right: none;
+    }
     span {
       display: inline-block;
-      background: white;
-      color: $black;
-      padding: 3px 5px;
+      border-right: 1px solid $cyan;
+      color: $cyan;
+      padding: 3px 10px;
       text-decoration: none;
-      margin-left: 10px;
-      margin-bottom: 10px;
     }
   }
 
