@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
 .articles {
+  font-family: "Montserrat", sans-serif;
   padding: 100px;
 
   a {
@@ -15,6 +18,7 @@
 
 @media only screen and (max-width: 600px) {
   .articles {
-    padding: 10px 5%;
+    padding: 10px 10%;
+    font-size: 0.8em;
   }
 }

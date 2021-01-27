@@ -76,6 +76,12 @@ $cyan: #dfe1e6;
 
 @media only screen and (max-width: 600px) {
   .project {
+    div {
+      width: 80% !important;
+    }
+    div:nth-of-type(1) {
+      width: 96% !important;
+    }
     h3 {
       font-size: 1em;
       line-height: 30px;
