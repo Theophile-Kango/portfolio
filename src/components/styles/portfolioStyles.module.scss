@@ -41,8 +41,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         div {
           border-radius: 0 !important;
+          margin-bottom: 5px;
+        }
+        div:nth-of-type(1) {
+          border-top-left-radius: 30px !important;
+          border-top-right-radius: 30px !important;
+        }
+        div:nth-of-type(2) {
+          order: 2;
+          border-bottom-left-radius: 30px !important;
+          border-bottom-right-radius: 30px !important;
         }
       }
     }

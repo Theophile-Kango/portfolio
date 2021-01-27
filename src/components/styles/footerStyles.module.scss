@@ -34,3 +34,16 @@
     margin-top: 10px;
   }
 }
+
+@media only screen and (max-width: 830px) {
+  .footer {
+    ul {
+      display: flex;
+      flex-direction: row !important;
+      justify-content: space-between;
+      li {
+        width: 10% !important;
+      }
+    }
+  }
+}
