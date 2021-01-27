@@ -1,5 +1,7 @@
 .contact {
   width: 300px;
+  display: flex;
+
   li {
     list-style: none;
     background-color: #191765 !important;
@@ -16,6 +18,13 @@
   }
 }
 
-p {
-  margin-top: 10px;
+@media only screen and (max-width: 830px) {
+  .contact {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    li {
+      width: 10% !important;
+    }
+  }
 }

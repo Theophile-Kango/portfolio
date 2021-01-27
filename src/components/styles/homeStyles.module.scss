@@ -84,16 +84,22 @@ $black: #282c34;
         margin-bottom: 5px;
       }
     }
+    div {
+      display: none;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .home {
     ul {
+      width: 300px;
+      display: flex;
       padding: 5px 5%;
     }
 
     h1 {
+      width: 300px;
       font-size: 1.2em;
       margin-top: 80px;
       padding: 10px 5%;
@@ -101,7 +107,8 @@ $black: #282c34;
 
     h3,
     p {
-      font-size: 1em;
+      width: 300px;
+      font-size: 0.8em;
       line-height: 30px;
       padding: 10px 5%;
     }

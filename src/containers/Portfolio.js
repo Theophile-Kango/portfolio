@@ -15,8 +15,11 @@ const Portfolio = () => (
   <section id="portfolio" data-aos="fade-right" className={styles.portfolio}>
     <h1>My recent work</h1>
     {objects.map((object, i) => (
-      <div data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}>
-        <Project key={object.title} object={object} />
+      <div
+        key={object.title}
+        data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
+      >
+        <Project object={object} />
       </div>
     ))}
   </section>

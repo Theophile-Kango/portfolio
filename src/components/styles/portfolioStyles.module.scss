@@ -34,8 +34,28 @@
   }
 }
 
+@media only screen and (max-width: 830px) {
+  .portfolio {
+    div {
+      article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div {
+          border-radius: 0 !important;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .portfolio {
+    margin-top: -150px;
     padding: 5%;
+    h1 {
+      font-size: 2rem;
+      margin-left: 20px;
+    }
   }
 }
