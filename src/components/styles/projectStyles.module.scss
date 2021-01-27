@@ -1,5 +1,6 @@
 $black: #282c34;
 $cyan: #dfe1e6;
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 
 .project {
@@ -32,15 +33,16 @@ $cyan: #dfe1e6;
   }
 
   h4 {
-    span:nth-last-child(1) {
-      border-right: none;
-    }
     span {
       display: inline-block;
       border-right: 1px solid $cyan;
       color: $cyan;
       padding: 3px 10px;
       text-decoration: none;
+    }
+
+    span:nth-last-child(1) {
+      border-right: none;
     }
   }
 
@@ -61,12 +63,13 @@ $cyan: #dfe1e6;
 
 @media only screen and (max-width: 830px) {
   .project {
-    div:nth-of-type(1) {
-      width: 106% !important;
-    }
     div {
       width: 90% !important;
       font-size: 0.8em;
+    }
+
+    div:nth-of-type(1) {
+      width: 106% !important;
     }
   }
 }

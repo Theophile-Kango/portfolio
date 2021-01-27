@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import styles from "./styles/projectStyles.module.scss";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import styles from './styles/projectStyles.module.scss';
 
 AOS.init({
   offset: 400,
@@ -12,7 +12,9 @@ AOS.init({
 });
 
 const Project = ({ object }) => {
-  const { title, details, tech, demo, image } = object;
+  const {
+    title, details, tech, demo, image,
+  } = object;
   const { src, imageTitle } = image;
 
   return (
@@ -25,11 +27,11 @@ const Project = ({ object }) => {
         <p>{details}</p>
         <h4>
           Built with:
-          {tech.map((elt) => (
+          {tech.map(elt => (
             <span key={elt}>{elt}</span>
           ))}
         </h4>
-        {demo.map((elt) => (
+        {demo.map(elt => (
           <a
             target="_blank"
             href={elt.link}

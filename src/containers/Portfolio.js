@@ -1,9 +1,9 @@
-import React from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Project from "../components/Project";
-import objects from "../constant/objects";
-import styles from "../components/styles/portfolioStyles.module.scss";
+import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Project from '../components/Project';
+import objects from '../constant/objects';
+import styles from '../components/styles/portfolioStyles.module.scss';
 
 AOS.init({
   offset: 400,
@@ -17,7 +17,7 @@ const Portfolio = () => (
     {objects.map((object, i) => (
       <div
         key={object.title}
-        data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
+        data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
       >
         <Project object={object} />
       </div>

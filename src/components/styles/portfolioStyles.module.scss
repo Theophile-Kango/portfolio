@@ -1,31 +1,38 @@
+/* stylelint-disable */
 .portfolio {
   padding: 100px;
   padding-top: 0;
   line-height: 40px;
+
   h1 {
     font-size: 3rem;
     color: #9390ff;
   }
+
   div:nth-child(even) {
     article {
       div:nth-of-type(1) {
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
       }
+
       div:nth-last-of-type(1) {
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
       }
     }
   }
+
   div:nth-child(odd) {
     article {
       display: flex;
+
       div:nth-of-type(1) {
         order: 2;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
       }
+
       div:nth-last-of-type(1) {
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
@@ -42,14 +49,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         div {
           border-radius: 0 !important;
           margin-bottom: 5px;
         }
+
         div:nth-of-type(1) {
           border-top-left-radius: 30px !important;
           border-top-right-radius: 30px !important;
         }
+
         div:nth-of-type(2) {
           order: 2;
           border-bottom-left-radius: 30px !important;
@@ -64,6 +74,7 @@
   .portfolio {
     margin-top: -150px;
     padding: 5%;
+
     h1 {
       font-size: 2rem;
       margin-left: 20px;
