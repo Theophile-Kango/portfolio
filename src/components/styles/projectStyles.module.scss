@@ -7,7 +7,7 @@ $cyan: #dfe1e6;
   font-family: "Montserrat", sans-serif;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 5%;
 
   div:nth-of-type(1) {
     background-color: #2b296d;
@@ -70,6 +70,7 @@ $cyan: #dfe1e6;
 
     div:nth-of-type(1) {
       width: 106% !important;
+      height: 500px;
     }
   }
 }
@@ -82,12 +83,21 @@ $cyan: #dfe1e6;
 
     div:nth-of-type(1) {
       width: 96% !important;
+      height: 400px;
     }
 
     h3 {
       font-size: 1em;
       line-height: 30px;
       padding: 10px 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project {
+    div:nth-of-type(1) {
+      height: 300px;
     }
   }
 }
