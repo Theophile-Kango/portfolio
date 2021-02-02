@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "./styles/homeStyles.module.scss";
-import Contact from "./Contact";
+import React from 'react';
+import styles from './styles/homeStyles.module.scss';
+import Contact from './Contact';
 
 const Home = () => (
   <section className={styles.home} id="home">
