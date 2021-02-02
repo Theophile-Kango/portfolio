@@ -34,7 +34,7 @@ const objects = [
     title: 'Family Movies',
     details: `A responsive catalogue of family-friendly movies that allows 
       users to filter and pull up movie details using the IMDB API`,
-    tech: ['React', 'Redux', 'NodeJS', 'ES6', 'SCSS'],
+    tech: ['React', 'Redux', 'Node.js', 'ES6', 'SCSS'],
     demo: [
       {
         link: 'https://github.com/Theophile-Kango/family-movies-catalogue',
@@ -78,7 +78,7 @@ const objects = [
     title: 'Space Shooter Game',
     details: `This project is about the implementation of a space mission 
         where the player's goal is to prevent meteors from reaching the earth`,
-    tech: ['JavaScript (ES6)', 'Webpack', 'NodeJS', 'Phaser 3'],
+    tech: ['JavaScript (ES6)', 'webpack', 'Node.js', 'Phaser 3'],
     demo: [
       {
         link: 'https://github.com/Theophile-Kango/space-shooter-game',
