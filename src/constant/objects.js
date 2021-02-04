@@ -10,7 +10,7 @@ const objects = [
     title: 'Courses Track App',
     details: `The project is about grouping hours spent on different courses 
         at the University with a mobile web app`,
-    tech: ['Ruby On Rails', 'HTML5', 'SCSS'],
+    tech: ['Ruby on Rails', 'HTML5', 'SCSS'],
     demo: [
       {
         link: 'https://github.com/Theophile-Kango/group_our_transactions',
@@ -34,7 +34,7 @@ const objects = [
     title: 'Family Movies',
     details: `A responsive catalogue of family-friendly movies that allows 
       users to filter and pull up movie details using the IMDB API`,
-    tech: ['React', 'Redux', 'Node.js', 'ES6', 'SCSS'],
+    tech: ['React', 'Redux', 'Node.js', 'SCSS'],
     demo: [
       {
         link: 'https://github.com/Theophile-Kango/family-movies-catalogue',
@@ -78,7 +78,7 @@ const objects = [
     title: 'Space Shooter Game',
     details: `This project is about the implementation of a space mission 
         where the player's goal is to prevent meteors from reaching the earth`,
-    tech: ['JavaScript (ES6)', 'webpack', 'Node.js', 'Phaser 3'],
+    tech: ['JavaScript', 'webpack', 'Node.js', 'Phaser 3'],
     demo: [
       {
         link: 'https://github.com/Theophile-Kango/space-shooter-game',
