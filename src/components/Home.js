@@ -9,7 +9,7 @@ const Home = () => (
     <h3>Full-Stack Software Developer</h3>
     <p>
       Certified web developer who specializes in working with Ruby, Rails,
-      React, JavaScript and Redux. Currently exploring front-end remote
+      JavaScript, TypeScript, React, Redux and NextJS. Currently exploring full-stack remote
       development opportunities
     </p>
     <div />

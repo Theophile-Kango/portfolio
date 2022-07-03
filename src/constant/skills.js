@@ -12,12 +12,20 @@ const skills = [
     tech: 'JavaScript',
   },
   {
+    link: 'https://www.typescriptlang.org/',
+    tech: 'TypeScript',
+  },
+  {
     link: 'https://reactjs.org/',
     tech: 'React',
   },
   {
     link: 'https://redux.js.org/',
     tech: 'Redux',
+  },
+  {
+    link: 'https://nextjs.org/',
+    tech: 'NextJS',
   },
 ];
 
