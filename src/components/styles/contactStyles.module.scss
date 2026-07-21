@@ -1,32 +1,19 @@
 .contact {
-  width: 300px;
   display: flex;
+  gap: var(--space-4);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-  li {
-    list-style: none;
-    background-color: #191765 !important;
+  li a svg {
+    font-size: 1.4em;
+    color: var(--color-text-muted);
+    transition: color var(--transition-fast), transform var(--transition-fast);
 
-    a {
-      svg {
-        font-size: 1.5em;
-        color: #dfe1e6;
-
-        &:hover {
-          color: #9390ff;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 830px) {
-  .contact {
-    display: flex;
-    flex-direction: row !important;
-    justify-content: space-between;
-
-    li {
-      width: 10% !important;
+    &:hover,
+    &:focus-visible {
+      color: var(--color-accent);
+      transform: translateY(-2px);
     }
   }
 }

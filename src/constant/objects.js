@@ -2,8 +2,24 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import Gauzy from '../img/gauzy.jpg';
 import Qhare from '../img/qhare.jpg';
 import TradeHq from '../img/trade-hq.jpg';
+import Likelemba from '../img/likelemba.png';
 
 const objects = [
+  {
+    title: 'Likelemba',
+    details: 'A SaaS platform that gives communities the structure, visibility, and coordination tools to run their own savings circles (tontines and AVEC credit circles) without a bank or a middleman.',
+    tech: ['Ruby on Rails', 'GraphQL', 'React', 'TypeScript', 'React Native'],
+    demo: [
+      {
+        link: 'https://likelemba.app/',
+        icon: faLink,
+      },
+    ],
+    image: {
+      src: Likelemba,
+      imageTitle: 'Likelemba',
+    },
+  },
   {
     title: 'Ever Gauzy',
     details: 'Ever Gauzy Platform is an Enterprise Resource Planning (ERP), Customer Relationship Management (CRM) and Human Resource Management (HRM) software for modern On-Demand businesses.',
