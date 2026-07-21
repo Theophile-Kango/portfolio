@@ -27,6 +27,14 @@ const skills = [
     link: 'https://nextjs.org/',
     tech: 'NextJS',
   },
+  {
+    link: 'https://reactnative.dev/',
+    tech: 'React Native',
+  },
+  {
+    link: 'https://graphql.org/',
+    tech: 'GraphQL',
+  },
 ];
 
 export default skills;
