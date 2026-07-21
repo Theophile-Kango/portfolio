@@ -1,126 +1,150 @@
-$blue: #191765;
-$back: #282c34;
-$cyan: #dfe1e6;
-
 .header {
-  background-color: $cyan;
-  color: #191765;
+  background-color: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
   position: fixed;
   top: 0;
+  z-index: 100;
   width: 100%;
+  height: var(--header-height);
+  box-sizing: border-box;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 0 var(--space-5);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
 
   div {
     display: flex;
+    align-items: center;
+    gap: var(--space-3);
 
     h1 {
-      font-size: 1.5em;
-      font-weight: bold;
+      font-size: 1.25rem;
     }
 
     svg {
-      font-size: 1.5em;
-      margin: 20px;
+      font-size: 1.4em;
+      color: var(--color-accent);
     }
   }
 
   nav {
-    width: 500px;
-    margin-right: 10px;
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
 
     ul {
       display: flex;
-      justify-content: space-around;
       align-items: center;
-      height: 100%;
+      gap: var(--space-2);
       margin: 0;
+      padding: 0;
 
       li {
         list-style: none;
 
         a {
-          color: $blue;
-          padding: 10px;
+          display: block;
+          color: var(--color-text);
+          padding: var(--space-2) var(--space-3);
           text-decoration: none;
-          border-radius: 10px;
-          font-weight: bold;
+          border-radius: var(--radius-sm);
+          font-weight: 600;
+          font-size: 0.95rem;
+          transition: background-color var(--transition-fast), color var(--transition-fast);
 
-          &:hover {
-            background: $blue;
-            color: $cyan;
+          &:hover,
+          &:focus-visible {
+            background: var(--color-accent);
+            color: var(--color-accent-contrast);
           }
         }
       }
     }
 
+    .themeToggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      background: transparent;
+      color: var(--color-text);
+      font-size: 1.1em;
+      transition: border-color var(--transition-fast), color var(--transition-fast);
+
+      &:hover,
+      &:focus-visible {
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+      }
+    }
+
     .dNone {
       display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      background: transparent;
+      color: var(--color-text);
+      font-size: 1.1em;
+      transition: border-color var(--transition-fast), color var(--transition-fast);
+
+      &:hover,
+      &:focus-visible {
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+      }
     }
   }
 }
 
 @media only screen and (max-width: 830px) {
   .header {
-    div {
-      display: flex;
-      align-items: center;
+    padding: 0 var(--space-4);
 
+    div {
       h1 {
-        font-size: 1em;
+        font-size: 1rem;
       }
 
       svg {
         font-size: 1.2em;
-        margin: 10px;
       }
     }
 
     nav {
-      width: 150px;
+      .dNone {
+        display: flex;
+      }
 
       ul {
         display: flex;
         flex-direction: column;
+        align-items: stretch;
         position: absolute;
-        top: 150px;
+        top: var(--header-height);
+        right: var(--space-4);
+        background: var(--color-bg-elevated);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-card);
+        padding: var(--space-2);
+        gap: 0;
 
-        li {
-          width: 80px;
-
-          a {
-            background: $cyan;
-            color: $blue;
-            display: block;
-            width: 100%;
-            border-radius: 0;
-
-            &:hover {
-              background: $blue;
-              color: $cyan;
-            }
-          }
+        li a {
+          border-radius: var(--radius-sm);
         }
       }
 
       .ulDNone {
         display: none;
-      }
-
-      .dNone {
-        display: flex;
-        margin-right: 10px;
-        justify-content: flex-end;
-
-        svg {
-          font-size: 1.5em;
-
-          &:hover {
-            cursor: pointer;
-            color: #282c34;
-          }
-        }
       }
     }
   }

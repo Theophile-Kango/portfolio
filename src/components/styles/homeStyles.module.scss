@@ -1,119 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
-$cyan: #dfe1e6;
-$blue: #4386bf;
-$black: #282c34;
-
 .home {
-  font-family: "Montserrat", sans-serif;
-  height: 100vh;
-  margin-top: 15%;
+  width: 100%;
+  min-height: calc(100vh - var(--header-height));
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: calc(var(--header-height) + var(--space-6)) var(--space-5) var(--space-6);
   box-sizing: border-box;
 
-  h1 {
-    color: #9390ff;
-  }
-
-  h1,
-  h3,
-  p {
-    width: 500px;
-    line-height: 40px;
-  }
-
-  p {
-    padding-bottom: 60px;
-    border-bottom: 1px solid lightgray;
-  }
-
-  ul {
+  .card {
+    width: 100%;
+    max-width: 720px;
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    padding: var(--space-8) var(--space-7);
     display: flex;
-    margin-top: 0;
-    padding: 0 20%;
-
-    li {
-      display: flex;
-      background: lightgray;
-      width: 120px;
-      padding: 10px;
-      margin-left: 5px;
-      list-style: none;
-
-      &:hover {
-        background: $cyan;
-      }
-
-      a {
-        color: $black;
-        text-decoration: none;
-
-        &:hover {
-          color: $blue;
-        }
-      }
-    }
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
   }
 
-  div {
-    background: #edecff;
-    width: 100px;
-    height: 100px;
-    filter: blur(40px);
+  .eyebrow {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--color-accent);
+    letter-spacing: 0.02em;
   }
 
-  div:nth-of-type(1) {
-    position: absolute;
-    left: 10%;
-    top: 250px;
+  h1 {
+    font-size: 2.75rem;
+    line-height: 1.15;
   }
 
-  div:nth-of-type(2) {
-    position: absolute;
-    right: 10%;
-    top: 450px;
+  .bio {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    max-width: 60ch;
   }
 }
 
 @media only screen and (max-width: 830px) {
   .home {
-    ul {
-      display: flex;
-      flex-direction: column;
-
-      li {
-        margin-bottom: 5px;
-      }
+    .card {
+      padding: var(--space-6) var(--space-5);
     }
 
-    div {
-      display: none;
+    h1 {
+      font-size: 2.1rem;
     }
   }
 }
 
 @media only screen and (max-width: 600px) {
   .home {
-    ul {
-      width: 300px;
-      display: flex;
-      padding: 5px 5%;
-    }
+    padding: calc(var(--header-height) + var(--space-4)) var(--space-4) var(--space-4);
 
     h1 {
-      width: 300px;
-      font-size: 1.2em;
-      margin-top: 80px;
-      padding: 10px 5%;
+      font-size: 1.7rem;
     }
 
-    h3,
-    p {
-      width: 300px;
-      font-size: 0.8em;
-      line-height: 30px;
-      padding: 10px 5%;
+    .bio {
+      font-size: 0.95rem;
     }
   }
 }

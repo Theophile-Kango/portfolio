@@ -1,83 +1,27 @@
-/* stylelint-disable */
 .portfolio {
-  padding: 100px;
-  padding-top: 0;
-  line-height: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: var(--space-8) var(--space-5);
+  box-sizing: border-box;
 
-  h1 {
-    font-size: 3rem;
-    color: #9390ff;
-  }
-
-  div:nth-child(even) {
-    article {
-      div:nth-of-type(1) {
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-      }
-
-      div:nth-last-of-type(1) {
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-      }
-    }
-  }
-
-  div:nth-child(odd) {
-    article {
-      display: flex;
-
-      div:nth-of-type(1) {
-        order: 2;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-      }
-
-      div:nth-last-of-type(1) {
-        border-top-left-radius: 50px;
-        border-bottom-left-radius: 50px;
-      }
-    }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: var(--space-5);
   }
 }
 
-@media only screen and (max-width: 830px) {
-  .portfolio {
-    div {
-      article {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        div {
-          border-radius: 0 !important;
-          margin-bottom: 5px;
-        }
-
-        div:nth-of-type(1) {
-          border-top-left-radius: 30px !important;
-          border-top-right-radius: 30px !important;
-        }
-
-        div:nth-of-type(2) {
-          order: 2;
-          border-bottom-left-radius: 30px !important;
-          border-bottom-right-radius: 30px !important;
-        }
-      }
-    }
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-5);
 }
 
 @media only screen and (max-width: 600px) {
   .portfolio {
-    margin-top: -150px;
-    padding: 5%;
+    padding: var(--space-6) var(--space-4);
 
-    h1 {
-      font-size: 2rem;
-      margin-left: 20px;
+    h2 {
+      font-size: 1.6rem;
     }
   }
 }

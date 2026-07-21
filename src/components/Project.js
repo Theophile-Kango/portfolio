@@ -1,15 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import styles from './styles/projectStyles.module.scss';
-
-AOS.init({
-  offset: 400,
-  delay: 0,
-  duration: 1000,
-});
 
 const Project = ({ object }) => {
   const {
@@ -19,39 +11,50 @@ const Project = ({ object }) => {
 
   return (
     <article className={styles.project}>
-      <div>
+      <div className={styles.media}>
         <img src={src} alt={imageTitle} />
       </div>
-      <div>
+      <div className={styles.content}>
         <h3>{title}</h3>
         <p>{details}</p>
-        <h4>
-          Built with:
+        <p className={styles.techLabel}>Built with</p>
+        <ul className={styles.tech}>
           {tech.map(elt => (
-            <span key={elt}>{elt}</span>
+            <li key={elt}>{elt}</li>
           ))}
-        </h4>
-        {demo.map(elt => (
-          <a
-            target="_blank"
-            href={elt.link}
-            key={elt.link}
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={elt.icon} />
-          </a>
-        ))}
+        </ul>
+        <div className={styles.links}>
+          {demo.map(elt => (
+            <a
+              target="_blank"
+              href={elt.link}
+              key={elt.link}
+              rel="noopener noreferrer"
+              aria-label={`View ${title} live demo`}
+            >
+              <FontAwesomeIcon icon={elt.icon} />
+            </a>
+          ))}
+        </div>
       </div>
     </article>
   );
 };
 
 Project.propTypes = {
-  title: PropTypes.string,
-  details: PropTypes.string,
-  tech: PropTypes.instanceOf(Array),
-  demo: PropTypes.instanceOf(Array),
-  image: PropTypes.instanceOf(Object),
-}.isRequired;
+  object: PropTypes.shape({
+    title: PropTypes.string,
+    details: PropTypes.string,
+    tech: PropTypes.arrayOf(PropTypes.string),
+    demo: PropTypes.arrayOf(PropTypes.shape({
+      link: PropTypes.string,
+      icon: PropTypes.instanceOf(Object),
+    })),
+    image: PropTypes.shape({
+      src: PropTypes.string,
+      imageTitle: PropTypes.string,
+    }),
+  }).isRequired,
+};
 
 export default Project;

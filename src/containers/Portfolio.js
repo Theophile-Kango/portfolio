@@ -6,22 +6,21 @@ import objects from '../constant/objects';
 import styles from '../components/styles/portfolioStyles.module.scss';
 
 AOS.init({
-  offset: 400,
+  offset: 150,
   delay: 0,
-  duration: 1000,
+  duration: 600,
 });
 
 const Portfolio = () => (
-  <section id="portfolio" data-aos="fade-right" className={styles.portfolio}>
-    <h1>My recent work</h1>
-    {objects.map((object, i) => (
-      <div
-        key={object.title}
-        data-aos={i % 2 === 0 ? 'fade-left' : 'fade-right'}
-      >
-        <Project object={object} />
-      </div>
-    ))}
+  <section id="portfolio" className={styles.portfolio}>
+    <h2>My recent work</h2>
+    <div className={styles.grid}>
+      {objects.map((object, i) => (
+        <div key={object.title} data-aos="fade-up" data-aos-delay={i * 100}>
+          <Project object={object} />
+        </div>
+      ))}
+    </div>
   </section>
 );
 
